@@ -1303,6 +1303,15 @@ header.scrolled {
   display: block;
 }
 
+.whatsapp-btn-footer {
+  transition: var(--transition-normal);
+}
+
+.whatsapp-btn-footer:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
 /* --- Footer --- */
 footer {
   background: linear-gradient(to top, rgba(224, 242, 254, 0.45), var(--clr-bg));
