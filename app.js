@@ -386,7 +386,27 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!tourVideo.paused) {
           videoOverlay.style.opacity = '0';
         }
-      });
     }
+  }
+
+  // --- Hero Video Mute Toggle ---
+  const heroVideo = document.getElementById('hero-video');
+  const heroMuteBtn = document.getElementById('hero-mute-btn');
+  if (heroVideo && heroMuteBtn) {
+    heroMuteBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const iconMuted = heroMuteBtn.querySelector('.icon-muted');
+      const iconUnmuted = heroMuteBtn.querySelector('.icon-unmuted');
+      
+      if (heroVideo.muted) {
+        heroVideo.muted = false;
+        if (iconMuted) iconMuted.style.display = 'none';
+        if (iconUnmuted) iconUnmuted.style.display = 'block';
+      } else {
+        heroVideo.muted = true;
+        if (iconMuted) iconMuted.style.display = 'block';
+        if (iconUnmuted) iconUnmuted.style.display = 'none';
+      }
+    });
   }
 });
