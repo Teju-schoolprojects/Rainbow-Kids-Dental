@@ -387,6 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!tourVideo.paused) {
           videoOverlay.style.opacity = '0';
         }
+      });
     }
   }
 
