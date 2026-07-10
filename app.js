@@ -392,21 +392,46 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Hero Video Mute Toggle ---
   const heroVideo = document.getElementById('hero-video');
   const heroMuteBtn = document.getElementById('hero-mute-btn');
+  
   if (heroVideo && heroMuteBtn) {
-    heroMuteBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
+    const unmuteVideo = () => {
+      heroVideo.muted = false;
       const iconMuted = heroMuteBtn.querySelector('.icon-muted');
       const iconUnmuted = heroMuteBtn.querySelector('.icon-unmuted');
-      
+      if (iconMuted) iconMuted.style.display = 'none';
+      if (iconUnmuted) iconUnmuted.style.display = 'block';
+    };
+
+    const muteVideo = () => {
+      heroVideo.muted = true;
+      const iconMuted = heroMuteBtn.querySelector('.icon-muted');
+      const iconUnmuted = heroMuteBtn.querySelector('.icon-unmuted');
+      if (iconMuted) iconMuted.style.display = 'block';
+      if (iconUnmuted) iconUnmuted.style.display = 'none';
+    };
+
+    // Toggle button click listener
+    heroMuteBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       if (heroVideo.muted) {
-        heroVideo.muted = false;
-        if (iconMuted) iconMuted.style.display = 'none';
-        if (iconUnmuted) iconUnmuted.style.display = 'block';
+        unmuteVideo();
       } else {
-        heroVideo.muted = true;
-        if (iconMuted) iconMuted.style.display = 'block';
-        if (iconUnmuted) iconUnmuted.style.display = 'none';
+        muteVideo();
       }
     });
+
+    // Auto-unmute on first user interaction anywhere on the screen
+    const handleFirstInteraction = () => {
+      if (heroVideo.muted) {
+        unmuteVideo();
+      }
+      document.removeEventListener('click', handleFirstInteraction);
+      document.removeEventListener('keydown', handleFirstInteraction);
+      document.removeEventListener('touchstart', handleFirstInteraction);
+    };
+
+    document.addEventListener('click', handleFirstInteraction);
+    document.addEventListener('keydown', handleFirstInteraction);
+    document.addEventListener('touchstart', handleFirstInteraction);
   }
 });
