@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Rainbow Children Dental Hospital - a colorful, painless, and fun dental care experience tailored specifically for children. Schedule an appointment today!">
+  <title>Rainbow Children Dental Hospital | A Magical Smile Journey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Bubbles decoration -->
+  <div class="hero-bubbles">
+    <div class="bubble" style="width: 25px; height: 25px; left: 10%; animation-delay: 0s; animation-duration: 10s;"></div>
+    <div class="bubble" style="width: 40px; height: 40px; left: 25%; animation-delay: 2s; animation-duration: 12s;"></div>
+    <div class="bubble" style="width: 20px; height: 20px; left: 45%; animation-delay: 1s; animation-duration: 8s;"></div>
+    <div class="bubble" style="width: 35px; height: 35px; left: 65%; animation-delay: 3s; animation-duration: 15s;"></div>
+    <div class="bubble" style="width: 15px; height: 15px; left: 80%; animation-delay: 0s; animation-duration: 6s;"></div>
+    <div class="bubble" style="width: 30px; height: 30px; left: 90%; animation-delay: 4s; animation-duration: 11s;"></div>
+  </div>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-rainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="hsl(340, 100%, 72%)" />
+              <stop offset="25%" stop-color="hsl(24, 100%, 68%)" />
+              <stop offset="50%" stop-color="hsl(142, 60%, 62%)" />
+              <stop offset="100%" stop-color="hsl(198, 100%, 62%)" />
+            </linearGradient>
+          </defs>
+          <!-- Rainbow Arc -->
+          <path d="M 15 70 A 35 35 0 0 1 85 70" fill="none" stroke="url(#logo-rainbow)" stroke-width="12" stroke-linecap="round"/>
+          <!-- Little happy tooth -->
+          <path d="M 38 65 C 38 52, 42 48, 50 48 C 58 48, 62 52, 62 65 C 62 70, 59 75, 57 78 C 55 81, 56 83, 56 85 C 56 87, 53 87, 50 85 C 47 87, 44 87, 44 85 C 44 83, 45 81, 43 78 C 41 75, 38 70, 38 65 Z" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+          <path d="M 43 78 C 45 81, 44 83, 44 85 C 44 87, 47 87, 50 85" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round"/>
+          <!-- Smiling face details -->
+          <circle cx="46" cy="58" r="2.5" fill="#1e293b" />
+          <circle cx="54" cy="58" r="2.5" fill="#1e293b" />
+          <path d="M 47 64 Q 50 67 53 64" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span>Rainbow <span class="text-gradient">Kids Dental</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#tour" class="nav-link">Clinic Tour</a>
+        <a href="#kids-zone" class="nav-link">Kids Zone</a>
+        <a href="#scheduler" class="nav-link">Book Appointment</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#scheduler" class="btn btn-primary" style="font-size: var(--fs-base); padding: 0.6rem 1.5rem;">Book Now</a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag">🌈 Welcome to Smile Magic Land</span>
+        <h1 class="hero-title">Where Big Smiles <br>Have <span class="text-gradient-rainbow">Bright Adventures</span></h1>
+        <p class="hero-description">We combine magical rainbow aesthetics, friendly pediatric doctors, and gentle painless technology to make going to the dentist your child's favorite day of the week.</p>
+        <div class="hero-buttons">
+          <a href="#scheduler" class="btn btn-primary">Make an Appointment</a>
+          <a href="#kids-zone" class="btn btn-secondary">Explore Kids Zone</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="hero-blob-bg"></div>
+        <!-- Visual Hero Illustration -->
+        <img class="hero-svg animate-float" src="assets/hero.png" alt="Rainbow Children Dental Hospital Hero Image" style="border-radius: var(--radius-lg); object-fit: cover; width: 100%; height: auto; max-width: 500px; box-shadow: var(--shadow-lg);">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section-padding" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">🌟 Magical Services</span>
+        <h2 class="section-title">Happy Treatments for Little Teeth</h2>
+        <p class="section-subtitle">We make dental care easy, fun, and completely stress-free with procedures created just for children.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Preventive Care -->
+        <div class="service-card bg-glass service-preventive">
+          <div class="service-card-image">
+            <img src="assets/preventive.jpg" alt="Preventive Care Shield Checkup">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title">Preventive Care</h3>
+            <p class="service-description">Magic shield paint (fluoride treatments) and checkups that keep decay monsters far away from growing smiles.</p>
+            <a href="#scheduler" class="service-link">
+              <span>Book Shield Session</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Super Cleanings -->
+        <div class="service-card bg-glass service-hygiene">
+          <div class="service-card-image">
+            <img src="assets/cleanings.jpg" alt="Shiny Dental Cleanings">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                <path d="M2 12h20"/>
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title">Shiny Cleanings</h3>
+            <p class="service-description">Painless bubbling cleanings that sweep away sugars and polish teeth until they glow like magical pearls.</p>
+            <a href="#scheduler" class="service-link">
+              <span>Book Pearl Polish</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: Orthodontics -->
+        <div class="service-card bg-glass service-ortho">
+          <div class="service-card-image">
+            <img src="assets/ortho.jpg" alt="Kid Orthodontics Braces">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="9" y1="9" x2="15" y2="15"/>
+                <line x1="15" y1="9" x2="9" y2="15"/>
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title">Kid Orthodontics</h3>
+            <p class="service-description">Cool colorful aligners and tiny brackets that shape teeth into straight, proud rainbow formations.</p>
+            <a href="#scheduler" class="service-link">
+              <span>Align Smiles</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4: Laughing Gas Sedation -->
+        <div class="service-card bg-glass service-sedation">
+          <div class="service-card-image">
+            <img src="assets/sedation.jpg" alt="Giggle Gas Sedation Care">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title">Giggle Gas (Sedation)</h3>
+            <p class="service-description">Sweet-flavored laughing gas that helps kids drift into happy daydreams, feeling absolute comfort.</p>
+            <a href="#scheduler" class="service-link">
+              <span>Explore Comfort</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRTUAL TOUR SECTION -->
+  <section id="tour" class="section-padding">
+    <div class="container tour-grid">
+      <div class="tour-video-container bg-glass">
+        <video id="tour-video" loop muted playsinline>
+          <source src="assets/clinic_tour.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- Custom overlay play button -->
+        <div class="video-overlay" id="video-overlay">
+          <button class="play-btn" aria-label="Play Clinic Tour Video">
+            <!-- Play icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 32px; height: 32px; margin-left: 4px;" id="play-icon">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <!-- Pause icon (initially hidden) -->
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 32px; height: 32px; display: none;" id="pause-icon">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="tour-details">
+        <span class="section-tag" style="background: rgba(142, 230, 160, 0.12); color: var(--clr-green); border-color: rgba(142, 230, 160, 0.2);">🏥 Interactive Clinic Tour</span>
+        <h2 class="section-title">Designed to Feel Like a Magical Playground</h2>
+        <p>Step inside a space engineered to melt dental anxiety away. From games in our bright lounge to television screens mounted on the ceilings of our spaceship-styled treatment rooms, every single detail is constructed with children's joy in mind.</p>
+        
+        <div class="tour-bullets">
+          <div class="tour-bullet">
+            <div class="tour-bullet-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <h4 class="tour-bullet-title">Arcade Waiting Zone</h4>
+              <p>Climbing slides, tablets loaded with fun games, and kid books keep them smiling from start to finish.</p>
+            </div>
+          </div>
+          <div class="tour-bullet">
+            <div class="tour-bullet-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <h4 class="tour-bullet-title">Ceiling Cartoon Screens</h4>
+              <p>Kids can stream their favorite animated movies while relaxing in our soft, rocket-themed reclining chairs.</p>
+            </div>
+          </div>
+          <div class="tour-bullet">
+            <div class="tour-bullet-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <h4 class="tour-bullet-title">Sparkle Treasure Chest</h4>
+              <p>Every brave patient visits the magical chest after treatment to choose their favorite toy prize!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIDS ZONE SECTION -->
+  <section id="kids-zone" class="section-padding kids-zone">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" style="background: rgba(168, 85, 247, 0.08); color: var(--clr-purple); border-color: rgba(168, 85, 247, 0.15);">🎮 Kids Magic Zone</span>
+        <h2 class="section-title">Let's Make Brushing Fun!</h2>
+        <p class="section-subtitle">Play Sparkle Dino's favorite brushing game and learn how to keep your pearly whites shining every day.</p>
+      </div>
+
+      <div class="kids-grid">
+        <!-- Dino Mascot Tips Panel -->
+        <div class="mascot-card bg-glass">
+          <div class="mascot-avatar">
+            <!-- Autoplay Brushing Video in Icon Place -->
+            <video id="mascot-brushing-video" loop muted autoplay playsinline>
+              <source src="assets/kids_brushing.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="speech-bubble">
+            <p>Hey there! Brush your teeth twice a day for two full minutes! ⏰</p>
+          </div>
+          <h3 style="font-family: var(--font-display); font-weight: 700; margin-bottom: 0.25rem;">Sparkle the Dino</h3>
+          <p style="font-size: var(--fs-sm); color: var(--clr-text-light); margin-bottom: 1.5rem;">Hospital Health Mascot</p>
+          
+          <div class="tips-slider">
+            <span class="tip-dot active"></span>
+            <span class="tip-dot"></span>
+            <span class="tip-dot"></span>
+            <span class="tip-dot"></span>
+            <span class="tip-dot"></span>
+          </div>
+        </div>
+
+        <!-- Brushing Countdown Console -->
+        <div class="game-console bg-glass">
+          <h3 class="game-title">2-Minute Brushing Timer</h3>
+          <p class="game-subtitle" id="game-mascot-bubble">Press play and brush along! Sparkle Dino will guide your brushing steps.</p>
+
+          <div class="timer-ring-container">
+            <svg class="timer-ring-svg">
+              <defs>
+                <linearGradient id="timer-rainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="var(--clr-pink)" />
+                  <stop offset="50%" stop-color="var(--clr-green)" />
+                  <stop offset="100%" stop-color="var(--clr-blue)" />
+                </linearGradient>
+              </defs>
+              <circle class="timer-ring-track" cx="110" cy="110" r="100" />
+              <circle class="timer-ring-progress" cx="110" cy="110" r="100" />
+            </svg>
+            <div class="timer-text-overlay">
+              <span class="timer-digits">2:00</span>
+              <span class="timer-label">BRUSH TIME</span>
+            </div>
+          </div>
+
+          <div class="game-controls">
+            <button class="btn-game btn-game-play" id="timer-play" aria-label="Play/Pause Timer">
+              <!-- Play icon -->
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              <!-- Pause icon (initially hidden) -->
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              </svg>
+            </button>
+            <button class="btn-game btn-game-reset" id="timer-reset" aria-label="Reset Timer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / SCHEDULER SECTION -->
+  <section id="scheduler" class="section-padding">
+    <div class="container scheduler-grid">
+      <div class="scheduler-details">
+        <span class="section-tag" style="background: rgba(245, 158, 11, 0.08); color: var(--clr-orange); border-color: rgba(245, 158, 11, 0.15);">📅 Magic Scheduler</span>
+        <h2>Schedule a Stress-Free Smile Visit</h2>
+        <p>Book a visit online inside our child-friendly hospital in just one minute. Select your preferred date, child's details, and services below.</p>
+        
+        <div class="work-hours">
+          <div class="hours-item">
+            <span class="hours-day">Monday – Friday</span>
+            <span class="hours-time">8:00 AM – 6:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span class="hours-day">Saturday</span>
+            <span class="hours-time">9:00 AM – 3:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span class="hours-day">Sunday</span>
+            <span class="hours-closed">Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-box bg-glass" style="position: relative;">
+        <!-- Success State Overlay -->
+        <div class="booking-success-overlay" id="booking-success-overlay">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-title">Visit Booked!</h3>
+          <p class="success-msg">Your smile adventure is scheduled! We just sent a confirmation text message to your phone with preparation tips.</p>
+          <button class="btn btn-primary" id="success-close-btn">Awesome, thanks!</button>
+        </div>
+
+        <!-- Form details -->
+        <div class="booking-form-header">
+          <h3 class="booking-form-title">Request Appointment</h3>
+          <p class="booking-form-desc">Fill out this quick form and our magical crew will lock in your slot.</p>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+          <div class="form-group-row">
+            <div class="form-control-wrapper">
+              <label class="form-label" for="parent-name">Parent's Name</label>
+              <input type="text" class="form-input" id="parent-name" placeholder="e.g. Sunita Sharma" required>
+            </div>
+            <div class="form-control-wrapper">
+              <label class="form-label" for="child-name">Child's Name</label>
+              <input type="text" class="form-input" id="child-name" placeholder="e.g. Aarav Sharma" required>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-control-wrapper">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input type="tel" class="form-input" id="phone" placeholder="e.g. +91 98765 43210" required>
+            </div>
+            <div class="form-control-wrapper">
+              <label class="form-label" for="booking-date">Preferred Date</label>
+              <input type="date" class="form-input" id="booking-date" required>
+            </div>
+          </div>
+
+          <div class="form-control-wrapper">
+            <label class="form-label" for="booking-service">Choose Treatment</label>
+            <select class="form-input" id="booking-service" required>
+              <option value="" disabled selected>Select a Service</option>
+              <option value="preventive">First Visit / Checkup (Shield Session)</option>
+              <option value="cleaning">Shiny Bubbling Cleanings (Pearl Polish)</option>
+              <option value="orthodontics">Straight Smiles (Braces/Aligners)</option>
+              <option value="emergency">Emergency Dental Care</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Book Smile Adventure</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="section-padding" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" style="background: rgba(34, 197, 94, 0.08); color: var(--clr-green); border-color: rgba(34, 197, 94, 0.15);">💬 Parent Reviews</span>
+        <h2 class="section-title">What Happy Parents Say</h2>
+        <p class="section-subtitle">Read how we turned dental anxiety into smiles, giggles, and fun clinic stories.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonials-image">
+          <img src="assets/reviews.jpg" alt="Happy Indian Mother and Child Smiling">
+        </div>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="testimonial-card bg-glass">
+              <div class="testimonial-quote-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p class="testimonial-text">"My daughter Aarohi used to cry whenever we mentioned the dentist. Today at Rainbow, she was laughing, playing on the slide, and asking when we can visit Sparkle Dino again! Absolutely wonderful!"</p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Priyanka Sharma</h4>
+                  <p class="author-role">Parent of Aarohi (5 years old)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card bg-glass">
+              <div class="testimonial-quote-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p class="testimonial-text">"The rocket ship treatment room and ceiling movie screens are genius! Kavya was so engrossed in his cartoon that he didn't even notice the dental cleaning. Painless and very professional!"</p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Rajesh Verma</h4>
+                  <p class="author-role">Parent of Kavya (7 years old)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card bg-glass">
+              <div class="testimonial-quote-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p class="testimonial-text">"Brilliant staff who know exactly how to talk to kids. They explained all the tools as 'magic wands' and 'bubbles' which made my twins feel safe and excited. Highly recommend!"</p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Meera Nair</h4>
+                  <p class="author-role">Parent of Ishaan & Diya (Twins, 6 years old)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-btn-prev" aria-label="Previous Slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel-indicator-dots"></div>
+            <button class="carousel-btn carousel-btn-next" aria-label="Next Slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 15 70 A 35 35 0 0 1 85 70" fill="none" stroke="url(#logo-rainbow)" stroke-width="12" stroke-linecap="round"/>
+            <path d="M 38 65 C 38 52, 42 48, 50 48 C 58 48, 62 52, 62 65 C 62 70, 59 75, 57 78 C 55 81, 56 83, 56 85 C 56 87, 53 87, 50 85 C 47 87, 44 87, 44 85 C 44 83, 45 81, 43 78 C 41 75, 38 70, 38 65 Z" fill="#ffffff" />
+            <circle cx="46" cy="58" r="2.5" fill="#1e293b" />
+            <circle cx="54" cy="58" r="2.5" fill="#1e293b" />
+            <path d="M 47 64 Q 50 67 53 64" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span>Rainbow <span class="text-gradient">Kids Dental</span></span>
+        </a>
+        <p>Creating magical dental experiences that build happy habits and healthy smiles for a lifetime.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#services" class="footer-link">Treatments</a></li>
+          <li><a href="#tour" class="footer-link">Clinic Tour</a></li>
+          <li><a href="#kids-zone" class="footer-link">Kids Zone</a></li>
+          <li><a href="#scheduler" class="footer-link">Book Now</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Sparkle Team</h4>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-text">
+              <p>Rainbow Kids Dental, Jubilee Enclave,</p>
+              <p>Gachibowli, Hyderabad</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-text">
+              <p><a href="tel:+918037836511">+91-8037836511</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-text">
+              <p><a href="mailto:hello@rainbowkidsdental.com">hello@rainbowkidsdental.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Rainbow Children Dental Hospital. All rights reserved.</p>
+      <p>Made with 💖 for happy kids and healthy smiles.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
