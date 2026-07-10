@@ -355,6 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (tourVideo && videoOverlay) {
     videoOverlay.addEventListener('click', () => {
       if (tourVideo.paused) {
+        tourVideo.muted = false; // Unmute programmatically on play
         tourVideo.play();
         videoOverlay.style.background = 'rgba(15, 23, 42, 0.05)';
         if (playIcon) playIcon.style.display = 'none';
